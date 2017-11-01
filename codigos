@@ -1,3 +1,46 @@
+//fatorial
 def fatorial(n:Int):Int={
   	return if(n == 0) 1 else n * fatorial(n-1)
 }  
+ 
+//fibonacci recursiva
+def fib(n:BigInt):BigInt={
+    if(n<2)
+      return n
+    else{
+      return fib(n-1) + fib(n-2)
+    }
+  }
+  
+  //fibonacci iterativa
+  def fib(n:Int):BigInt={
+    var i :BigInt =1
+    var j :BigInt =0
+    
+    for(k<-1 to n){
+      var t =i+j
+      i=j
+      j=t
+    }
+    return j
+  }
+  
+  //Arrays
+  var nomes =Array("Joao","maria","jose","Neusa")
+  var nome:Array[String] = new Array[String](7)
+  var nom = new Array[String](6)
+  
+  nome(0)="fulano"
+  nome(1)="cicrano"
+  
+  for(k<-nomes)
+    println(k)
+    
+  println("")
+  
+  for(k<-nome)
+    println(k)
+   println("")
+   
+   for(k<-nom)
+    println(k)
