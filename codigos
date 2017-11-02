@@ -1,4 +1,4 @@
-//fatorial
+//fatorial                                                              
 def fatorial(n:Int):Int={
   	return if(n == 0) 1 else n * fatorial(n-1)
 }  
@@ -44,3 +44,8 @@ def fib(n:BigInt):BigInt={
    
    for(k<-nom)
     println(k)
+    
+ //Funcoes de ordem superior
+  def cubo(x:Int):Int=x*x*x
+  def soma(f:Int=>Int,a:Int,b:Int):Int=f(a) + f(b)
+  def somaCubos(a:Int,b:Int) = soma(cubo,a,b)
